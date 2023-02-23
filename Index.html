@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tem-Converter</title>
-   
+
 </head>
 
 <body>
-    
+
     <input id="fah" placeholder="Fahrenheit" />
     <br><br>
     <button onclick="convert()">Convert</button>
@@ -22,13 +22,13 @@
             //1.1 parseInt is use to convert string in to number.(A globle function).
             const value = parseInt(
                 document.getElementById("fah").value
-                );
-        
-        //2. Convert the user value of tempreature in celsius.
-        const cel = (value - 32) * 5556;
-        //3. Display the number
-        document.getElementById("cel").innerText = cel
-    }
+            );
+
+            //2. Convert the user value of tempreature in celsius.
+            const cel = (value - 32) * 0.5556;
+            //3. Display the number
+            document.getElementById("cel").innerText = cel
+        }
     </script>
 </body>
 
