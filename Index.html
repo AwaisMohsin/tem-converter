@@ -6,14 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tem-Converter</title>
+    <style>
+        html {
 
+            /*alternatively you can use this (transform: scale(1.5)); */
+            zoom: 500%;
+        }
+
+        body {
+            background: linear-gradient(90deg, rgba(179,52,178,1) 0%, rgba(182,120,49,1) 28%, rgba(106,68,159,1) 56%, rgba(23,137,190,1) 78%, rgba(0,212,255,1) 100%);  
+            margin-top: 15%;
+            margin-left: 15%; ;
+        }
+        span {
+            font-size: 50px;
+        }
+    </style>
 </head>
 
 <body>
 
     <input id="fah" placeholder="Fahrenheit" />
-    <br><br>
-    <button onclick="convert()">Convert</button>
+    
+    <button onclick="convert()">Convert</button><br>
     <span id="cel"></span>
 
     <script>
